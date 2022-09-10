@@ -1,0 +1,8 @@
+/Build
+*.user
+*.sln
+/out
+.vscode
+.vs
+/.vscode
+/.vs

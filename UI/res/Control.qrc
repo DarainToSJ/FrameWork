@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/ExitBtn_hover.png</file>
+        <file>image/ExitBtn_normal.png</file>
+        <file>image/ExitBtn_press.png</file>
+        <file>image/HideBtn_hover.png</file>
+        <file>image/HideBtn_normal.png</file>
+        <file>image/HideBtn_press.png</file>
+        <file>image/MaxWBtn_hover.png</file>
+        <file>image/MaxWBtn_normal.png</file>
+        <file>image/MaxWBtn_press.png</file>
+        <file>image/MenuTBtn_hover.png</file>
+        <file>image/MenuTBtn_normal.png</file>
+        <file>image/MenuTBtn_press.png</file>
+        <file>image/RegisterTBtn_hover.png</file>
+        <file>image/RegisterTBtn_normal.png</file>
+        <file>image/RegisterTBtn_press.png</file>
+        <file>image/restore_btn_hover.png</file>
+        <file>image/restore_btn_normal.png</file>
+        <file>image/restore_btn_press.png</file>
+        <file>qss/ContentW.qss</file>
+        <file>qss/TitileBar.qss</file>
+    </qresource>
+</RCC>

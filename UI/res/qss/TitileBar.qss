@@ -1,0 +1,94 @@
+TitleBar {
+	background-color:#2E2F30;
+	min-height: 32px;
+	max-height: 32px;
+	border-top-left-radius :10px;
+	border-top-right-radius:10px;
+}
+
+TitleBar QLabel#m_AppName {
+
+	border: none;
+	font-family: "Microsoft YaHei UI";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+	min-width: 50px;
+	max-width: 100px;
+	color: #FFFFFF;
+	background-color: transparent;
+
+}
+
+TitleBar .QPushButton{
+	min-width: 24px;
+	max-width: 24px;
+	max-height: 24px;
+	min-height: 24px;
+	border: none;
+
+}
+TitleBar QPushButton#m_ExitBtn{
+
+	background-image: url(":/image/ExitBtn_normal.png");
+
+}
+
+TitleBar QPushButton#m_ExitBtn:hover{
+	background-image: url(":/image/ExitBtn_hover.png");
+
+}
+
+TitleBar QPushButton#m_ExitBtn:pressed{
+	background-image: url(":/image/ExitBtn_press.png");
+
+}
+TitleBar QPushButton#m_HideBtn{
+
+	background-image: url(":/image/HideBtn_normal.png");
+
+}
+
+TitleBar QPushButton#m_HideBtn:hover{
+	background-image: url(":/image/HideBtn_hover.png");
+
+}
+
+TitleBar QPushButton#m_HideBtn:pressed{
+	background-image: url(":/image/HideBtn_press.png");
+
+}
+
+
+TitleBar QPushButton#m_MaxWBtn{
+
+	background-image: url(":/image/MaxWBtn_normal.png");
+
+}
+
+TitleBar QPushButton#m_MaxWBtn:hover{
+	background-image: url(":/image/MaxWBtn_hover.png");
+
+}
+
+TitleBar QPushButton#m_MaxWBtn:pressed{
+	background-image: url(":/image/MaxWBtn_press.png");
+
+}
+
+TitleBar QPushButton#m_reStoreBtn{
+
+	background-image: url(":/image/restore_btn_normal.png");
+
+}
+
+TitleBar QPushButton#m_HideBtn:hover{
+	background-image: url(":/image/restore_btn_hover.png");
+
+}
+
+TitleBar QPushButton#m_HideBtn:pressed{
+	background-image: url(":/image/restore_btn_press.png");
+
+}
