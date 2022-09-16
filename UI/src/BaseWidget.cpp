@@ -1,4 +1,4 @@
-#include "../inc/BaseWidget.h"
+#include "BaseWidget.h"
 #include <QStyleOption>
 #include <QStyle>
 #include <QPainter>

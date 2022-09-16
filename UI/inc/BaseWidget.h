@@ -1,8 +1,8 @@
 #ifndef  _BASE_WIDGET_H_
 #define _BASE_WIDGET_H_
-#include "Export_Dll.h"
+#include "Ui_Export_Dll.h"
 #include <QWidget>
-class DLLEXPORT BaseWidget :public QWidget {
+class UIDLLEXPORT BaseWidget :public QWidget {
 
 	Q_OBJECT
 public:

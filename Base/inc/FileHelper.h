@@ -1,10 +1,10 @@
 #ifndef _FILE_HELPER_H_
 #define _FILE_HELPER_H_
-#include "Export_Dll.h"
+#include "Base_Export_Dll.h"
 
 #include <QString>
 
-class DLLEXPORT FileHelper
+class BASEDLLEXPORT FileHelper
 {
 public:
 	/**

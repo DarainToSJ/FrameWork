@@ -1,66 +1,32 @@
-#ifndef _TITLE_BAR_H_
+﻿#ifndef _TITLE_BAR_H_
 #define _TITLE_BAR_H_
-#include "Export_Dll.h"
-#include "BaseWidget.h"
+#include "BaseQmlWidget.h"
 
-class QLabel;
-class QPushButton;
-
-class DLLEXPORT TitleBar : public BaseWidget
+class TitleBarData;
+class UIDLLEXPORT TitleBar : public BaseQmlWidget
 {
-	Q_OBJECT
-public:
-	explicit TitleBar(QWidget *parent = nullptr);
+    Q_OBJECT
 
-	/**
-	 * @brief 更新TitleBar 最大化按钮
-	 *
-	 * @param isMaxFlag
-	 */
-	void updateToMaxWindow(bool isMaxFlag = false);
 
 public:
-	/**
-	 * @brief hideBtn 点击响应事件
-	 *
-	 */
-	void on_hideBtn_Clicked();
+    explicit TitleBar(const QUrl &url, QWidget *parent = nullptr);
+    ~TitleBar();
 
-	/**
-	 * @brief MaxBtn 点击响应事件
-	 *
-	 */
-	void on_MaxOrRestoreBtn_Clicked();
 
-signals:
-	/**
-	 * @brief
-	 *
-	 */
-	void signalExitBtnClicked();
 
+
+ public slots:
+    void on_Max_Btn_Clicked();
+    void on_Min_Btn_Clicked();
+    void on_Buy_Btn_Clicked();
+    void on_Menu_Btn_Clicked();
+    void on_Close_Btn_Clicked();
+    void on_Restore_Btn_Clicked();
+    void on_Register_Btn_Clicked();
 protected:
-	void initUI();
-
-	void initConnect();
-
-	virtual void mousePressEvent(QMouseEvent *event) override;
-
-	virtual void mouseReleaseEvent(QMouseEvent *event) override;
-
-	virtual void mouseDoubleClickEvent(QMouseEvent *event) override;
-
-	virtual void mouseMoveEvent(QMouseEvent *event) override;
-
-private:
-	QLabel *m_AppName;
-	QPushButton *m_ExitBtn;
-	QPushButton *m_MaxWBtn;
-	QPushButton *m_HideBtn;
-	QPushButton *m_reStoreBtn;
-
-	QPoint m_mousePt;
-	bool m_bPressed = false;
+     virtual void initUI()override;
+    void initConnect();
+    TitleBarData* m_data=nullptr;
 };
 
-#endif // !_TITLE_BAR_H_
+#endif

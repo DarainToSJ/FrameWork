@@ -32,7 +32,7 @@ message(STATUS "[${PROJECT_NAME}] BUILD_PLATFORM:${BUILD_PLATFORM}")
 
 # default RelWithDebInfo
 if(NOT CMAKE_BUILD_TYPE)
-    set(CMAKE_BUILD_TYPE RelWithDebInfo)
+    set(CMAKE_BUILD_TYPE Debug)
 endif()
 message(STATUS "[${PROJECT_NAME}] BUILD_TYPE:${CMAKE_BUILD_TYPE}")
 
@@ -51,7 +51,7 @@ set(CMAKE_AUTORCC ON)
 #######################添加配置文件
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/CMake)
 
-
+find_package(Qt5  COMPONENTS Widgets Core Gui  Quick QuickWidgets REQUIRED)
 
 ################配置C++环境
 include(ConfigCXX)
@@ -75,13 +75,20 @@ message(STATUS "PROJECT_SOURCE_DIR:"${PROJECT_SOURCE_DIR})
 
 
 # ################################添加子项目文件
-# add_subdirectory(MainWindow)
 
- add_subdirectory(UI)
+add_subdirectory(Base)
 
- add_subdirectory(Base)
+add_subdirectory(UI)
+
+add_subdirectory(MainWindow)
+
+
+
 
 
 # #################################DependsOn  依赖
  add_dependencies(UI Base)
+ add_dependencies(MainWindow UI Base)
+
+
 

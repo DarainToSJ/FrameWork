@@ -1,13 +1,13 @@
 #ifndef _NOTIFY_H_
 #define _NOTIFY_H_
-#include "Export_Dll.h"
+#include "Base_Export_Dll.h"
 #include <QMap>
 #include <memory>
 #include <QList>
 #include <QReadWriteLock>
 typedef void (*notify_func)(int event, void *data, void *content);
 
-class DLLEXPORT Notify
+class BASEDLLEXPORT Notify
 {
 
 public:
